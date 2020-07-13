@@ -4,9 +4,13 @@
     box-sizing: border-box;
 }
 
+main {
+    font-family: 'Roboto', sans-serif;
+}
+
 .header {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -14,7 +18,6 @@
     list-style: none;
     display: flex;
     flex-direction: row;
-
 }
 
 .menuitem {
@@ -22,9 +25,18 @@
     margin-left: 10px;
 }
 
+.menuitem a {
+    text-decoration: none;
+    color: #04477C
+}
+
+.menuitem a:hover {
+    text-decoration: underline;
+}
+
 .wrapper {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     background-image: url(../images/bg.webp);
     background-size: cover;
@@ -33,13 +45,136 @@
 
 .textmainimage,
 .mainsubtitle {
+    font-weight: normal;
     color: white;
-    font-weight: bold;
     font-size: 48px;
     line-height: 1.25em;
+    margin-left: 300px;
+    display: block;
 }
 
 .mainsubtitle {
     margin-top: 58px;
     font-size: 32px
+}
+
+.wrappermiddle {
+    margin-top: 100px;
+    display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.imgtelevision {
+    background-color:#04477C;
+    margin-left: 50px;
+}
+
+.textdiffernt {
+    background-color:#04477C;
+    margin-right: 50px;
+    height: 680px;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;   
+}
+
+.textdiffernt h1 {
+    font-weight: bold;
+    margin-bottom: 50px;
+    color: white;
+}
+
+.textdiffernt p {
+    color: white;
+    font-weight: normal;
+    line-height: 30px;
+}
+
+.textdiffernt .textcontact {
+    margin-top: 100px;
+}
+
+.textcontact a {
+    color: white;
+    text-decoration: none;
+}
+
+.textcontact a:hover {
+    text-decoration: underline;
+}
+
+.professionalservices h1 {
+    margin-top: 100px;
+    text-align: center;
+    color: #04477C
+}
+
+.professionalservices h3 {
+    margin-top: 20px;
+    text-align: center;
+    color: #04477C
+}
+
+.professionalgrid {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.professionalgrid figure {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.caption {
+    background-color: #04477C;
+    text-align: center;
+    color: white;
+}
+
+.caption figcaption,
+.caption p {
+    margin-top: 40px;
+}
+
+.caption p {
+    /* margin-bottom: 40px; */
+    padding-bottom: 40px;
+}
+
+.googlemaps {
+    margin-top: 50px;
+    /* margin-bottom: 50px; */
+}
+
+footer {
+    margin-top: 60px;
+}
+
+footer p {
+    color: #04477C;
+    font-size: 12px;
+    text-align: center;
+}
+
+footer ul {
+    margin-top: 30px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a {
+    color: black;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+footer .copy {
+    margin-top: 20px;
 }
