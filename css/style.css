@@ -58,7 +58,7 @@ main {
     font-size: 32px
 }
 
-.wrappermiddle {
+#about {
     margin-top: 100px;
     display: flex;
 	align-items: center;
@@ -88,6 +88,8 @@ main {
 }
 
 .textdiffernt p {
+    padding-left: 50px;
+    padding-right: 50px;
     color: white;
     font-weight: normal;
     line-height: 30px;
@@ -106,13 +108,13 @@ main {
     text-decoration: underline;
 }
 
-.professionalservices h1 {
+#professionalservices h1 {
     margin-top: 100px;
     text-align: center;
     color: #04477C
 }
 
-.professionalservices h3 {
+#professionalservices h3 {
     margin-top: 20px;
     text-align: center;
     color: #04477C
@@ -121,6 +123,7 @@ main {
 .professionalgrid {
     margin-top: 30px;
     display: flex;
+    flex-flow: row wrap;
     justify-content: center;
     align-items: center;
 }
@@ -142,14 +145,19 @@ main {
 }
 
 .caption p {
-    /* margin-bottom: 40px; */
     padding-bottom: 40px;
 }
 
-.googlemaps {
+.divgooglemaps {
+    display: flex;
+    justify-content: center;
     margin-top: 50px;
-    /* margin-bottom: 50px; */
 }
+
+.googlemaps {
+    width: 99vw;
+}
+
 
 footer {
     margin-top: 60px;
@@ -177,4 +185,5 @@ footer a {
 
 footer .copy {
     margin-top: 20px;
+    padding-bottom: 20px;
 }
